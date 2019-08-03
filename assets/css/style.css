@@ -81,6 +81,7 @@ h3 {
 nav {
   float: right;
   margin-top: 25px;
+  margin-right: 10%;
 }
 
 /*added padding-right to push the bar off of the right side of the browser window; solves issues with covered link when manually resizing*/
@@ -225,18 +226,21 @@ input[type=submit] {
     margin= auto;
 
   }
+
+  }
+
 }
 
 @media screen and (max-width: 768px) {
   #main-container {
     float: none;
-    max-width= 100%;
+    max-width: 100%;
   }
 
   .main-section {
     float: none;
-    max-width= 100%;
-    margin= auto;
+    max-width: 100%;
+    margin: auto;
   }
 
   a {
@@ -245,7 +249,8 @@ input[type=submit] {
   }
 
   .auth-image{
-    width= 25%;
+    width: 400px;
+    height: auto;
   }
 }
 
@@ -256,7 +261,7 @@ input[type=submit] {
   }
 
   #logo{
-    width= 100%;
+    width: 100%;
     float:none;
 
     text-align: center;
@@ -265,7 +270,7 @@ input[type=submit] {
     
   }
 
-  /*tried tweaking the formatting of normal links tinking it is what is adjusting the #logo and navbar sections */
+  /*tried tweaking the formatting of normal links thinking it is what is adjusting the #logo and navbar sections */
   a {
     text-align: center;
     display: block;
@@ -287,7 +292,8 @@ input[type=submit] {
   
   .auth-image{
     
-    width= 100%;
+    width: 100% !important;
+    padding-bottom: 15px;
   }
 
   /***SOLVED***; Overwrite the auto margins with specific margin-top/bottom values AFTER the auto margins. | block display is necessary for centering, but it won't allow for padding above or below the links?*/
@@ -316,6 +322,6 @@ input[type=submit] {
   }
 
   body {
-    width: 100%;
+    width: 92%;
   }
 }
