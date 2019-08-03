@@ -82,9 +82,11 @@ nav {
   margin-top: 25px;
 }
 
+/*added padding-right to push the bar off of the right side of the browser window; solves issues with covered link when manually resizing*/
 nav a {
   display: inline-block;
   padding-left: 15px;
+  padding-right: 15px;
   margin-left: 15px;
   line-height: 18px;
   color: #999;
@@ -254,9 +256,10 @@ input[type=submit] {
     text-align: center;
     display: block;
     margin: 0 auto;
-    padding: auto;
+    
   }
 
+  /*tried tweaking the formatting of normal links tinking it is what is adjusting the #logo and navbar sections */
   a {
     text-align: center;
     display: block;
@@ -272,14 +275,30 @@ input[type=submit] {
   }
   
   .auth-image{
+    
     width= 100%;
   }
 
+  /***SOLVED***; Overwrite the auto margins with specific margin-top/bottom values AFTER the auto margins. | block display is necessary for centering, but it won't allow for padding above or below the links?*/
   nav {
     float:none;
     text-align: center;
     display: block;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    
   }
 
+  .work {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+
+  .work:nth-child(even){
+    margin: 0 auto;
+  }
 }
