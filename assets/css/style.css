@@ -127,7 +127,7 @@ h3, h2 {
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
+  max-width: 750px;
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
@@ -214,4 +214,72 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+  #main-container {
+    max-width= 52%;
+    margin= auto;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #main-container {
+    float: none;
+    max-width= 100%;
+  }
+
+  .main-section {
+    float: none;
+    max-width= 100%;
+    margin= auto;
+  }
+
+  a {
+    margin-right: 20px;
+    
+  }
+
+  .auth-image{
+    width= 25%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #logo{
+    width= 100%;
+    float:none;
+
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: auto;
+  }
+
+  a {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  .main-section{
+    margin-top: 25px;
+  }
+
+  h1 {
+    margin-top:0px;
+  }
+  
+  .auth-image{
+    width= 100%;
+  }
+
+  nav {
+    float:none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+
 }
